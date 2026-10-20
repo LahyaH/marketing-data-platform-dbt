@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: fct_marketing_performance
+    description: >
+      Unified daily advertising performance from Facebook
+      and Snapchat, including spend, impressions, clicks,
+      click-through rate, cost per click and cost per mille.
+
+    columns:
+      - name: platform
+        description: Advertising platform, Facebook or Snapchat.
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['facebook', 'snapchat']
+
+      - name: ad_id
+        description: Advertisement identifier within each platform.
+        data_tests:
+          - not_null
+
+      - name: ad_date
+        description: Date of advertising performance.
+        data_tests:
+          - not_null
+
+      - name: spend
+        description: Advertising cost in the original source currency.
+        data_tests:
+          - not_null
+
+      - name: impressions
+        description: Number of advertisement impressions.
+
+      - name: clicks
+        description: Number of advertisement clicks.
+
+      - name: currency
+        description: Original currency of the advertising spend.
+
+      - name: ctr
+        description: Clicks divided by impressions.
+
+      - name: cpc
+        description: Spend divided by clicks.
+
+      - name: cpm
+        description: Spend per 1,000 impressions.

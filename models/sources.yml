@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: facebook
+    database: workspace
+    schema: marketing_bronze
+    tables:
+      - name: facebook_ads_stats
+      - name: facebook_ads
+      - name: facebook_campaigns
+      - name: new_adgroup
+      - name: new_acccount
+
+  - name: snapchat
+    database: workspace
+    schema: marketing_bronze
+    tables:
+      - name: snapchat_ads_stats
+      - name: snapchat_ads_ad_history_new_ad_names
+      - name: snapchat_ads_adgroup_history_new_ad_group_names
+      - name: snapchat_ads_campaign_history_new_campaign_names
