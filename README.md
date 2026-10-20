@@ -1,15 +1,9 @@
-Welcome to your new dbt project!
+## Data Lineage
 
-### Using the starter project
+The following lineage graph was generated using dbt Docs.
+It shows the relationships between the Facebook and
+Snapchat source tables, staging models, and the unified
+marketing performance model.
 
-Try running the following commands:
-- dbt run
-- dbt test
+![dbt Lineage Graph](dbt_lineage_graph.png)Welcome to your new dbt project!
 
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
